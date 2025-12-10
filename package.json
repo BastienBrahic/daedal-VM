@@ -1,0 +1,29 @@
+{
+  "name": "os-desktop",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@rive-app/react-canvas": "^4.24.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.25",
+    "howler": "^2.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/howler": "^2.2.12",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.6.3",
+    "vite": "^5.0.0"
+  }
+}

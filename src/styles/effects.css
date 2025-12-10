@@ -1,0 +1,105 @@
+/* src/styles/effects.css */
+
+/* Glitch horizontal des lignes TV */
+@keyframes tv-lines-glitch {
+  0%,
+  25%,
+  55%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  26% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  28% {
+    transform: translate3d(3px, 0, 0);
+  }
+  30% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  32% {
+    transform: translate3d(1px, 0, 0);
+  }
+  35% {
+    transform: translate3d(0, 0, 0);
+  }
+  60% {
+    transform: translate3d(0, 0, 0);
+  }
+  61% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  63% {
+    transform: translate3d(2px, 0, 0);
+  }
+  65% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Lignes TV qui “scannent” très légèrement */
+@keyframes tv-lines-scan {
+  0% {
+    opacity: 0.2;
+  }
+  45% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  55% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.tv-lines-overlay {
+  animation:
+    tv-lines-glitch 4s infinite linear,
+    tv-lines-scan 4s infinite ease-in-out;
+}
+
+/* Scanline épaisse qui descend de haut en bas */
+@keyframes tv-scan-thick-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.35;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 0.45;
+  }
+  95% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/* Effet glitch horizontal : lignes qui décalent légèrement ce qu'il y a dessous */
+@keyframes tv-scan-thick-down {
+  0% {
+    transform: translateY(-60px); /* démarre un peu au-dessus */
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(calc(100vh + 60px)); /* descend jusqu'en bas + marge */
+    opacity: 0;
+  }
+}
+
+

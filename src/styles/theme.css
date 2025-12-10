@@ -1,0 +1,32 @@
+:root {
+  /* Background général (wallpaper) */
+  --os-color-bg: #E8E8E8;
+  --os-color-bg-alt: #E8E8E8;
+
+  /* Surfaces (fenêtres, top bar, bottom bar) */
+  --os-color-surface: #F1F2F6;
+  --os-color-surface-elevated: #F1F2F6;
+
+  /* Bordures fines discrètes */
+  --os-color-border: #D0D0D0;
+
+  /* Texte / icônes */
+  --os-color-text: #393C41;
+  --os-color-text-muted: #6E7075;
+  --os-color-text-inverted: #FFFFFF;
+
+  /* Accent  */
+  --os-color-accent: #393C41;
+  --os-color-accent-hover: #393C41;
+  --os-color-accent-active: #393C41;
+
+  /* États */
+  --os-color-selected: rgba(57, 60, 65, 0.1);
+  --os-color-hover: rgba(57, 60, 65, 0.05);
+  --os-color-pressed: rgba(57, 60, 65, 0.15);
+
+  /* Statuts (si utilisés dans ton OS) */
+  --os-color-warning: #facc15;
+  --os-color-success: #22c55e;
+  --os-color-error: #ef4444;
+}

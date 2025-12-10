@@ -1,0 +1,33 @@
+/* src/styles/cursor.css */
+
+/* Curseur par défaut pour tout l'OS */
+.os-shell,
+.os-shell * {
+  cursor: url('/cursors/cursor-default.cur'), default;
+}
+
+/* Curseur pointer (boutons, liens, icônes cliquables) */
+.os-shell [data-cursor="pointer"] {
+  cursor: url('/cursors/cursor-pointer.cur'), pointer;
+}
+
+/* Curseur pour les zones de texte */
+.os-shell [data-cursor="text"],
+.os-shell textarea,
+.os-shell input[type="text"],
+.os-shell input[type="search"],
+.os-shell input[type="password"] {
+  cursor: url('/cursors/cursor-text.cur'), text;
+}
+
+/* Curseur Grab & Grabbing (Unifié sur le même fichier) */
+.os-shell [data-cursor="grab"],
+.os-shell [data-cursor="grabbing"] {
+  cursor: url('/cursors/cursor-grab.cur'), grab;
+}
+
+/* Curseur Loading / Chargement */
+.os-shell [data-cursor="wait"],
+.os-shell .is-loading {
+  cursor: url('/cursors/cursor-wait.cur'), wait;
+}
