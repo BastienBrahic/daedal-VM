@@ -37,7 +37,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (!humanCheck) return false;
 
     const ok =
-      username === ADMIN_CREDENTIALS.username && password === ADMIN_CREDENTIALS.password;
+      username.toLowerCase() === ADMIN_CREDENTIALS.username.toLowerCase() && password === ADMIN_CREDENTIALS.password;
 
     return ok;
   };

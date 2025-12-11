@@ -433,7 +433,7 @@ export const LoginScreen: React.FC = () => {
           </div>
         )}
 
-        <div className="login-credits">\\VIRTUAL BOX</div>
+        <div className="login-credits"></div>
         <VisualFilters />
       </div>
     </>

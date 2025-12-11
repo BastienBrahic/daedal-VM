@@ -23,7 +23,7 @@ export const ABOUT_FILES: AboutFile[] = [
     number: 6,
     title: 'Day_01_initialisation.mp4',
     videoSrc: '/videos/1.mp4',
-    isAccessible: true,      // ✅ Accessible
+    isAccessible: false,      // ✅ Accessible
     triggersEndGame: false,  // ❌ Ne finit pas le jeu
   },
   {
