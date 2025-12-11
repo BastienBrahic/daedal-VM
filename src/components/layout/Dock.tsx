@@ -42,7 +42,7 @@ export const Dock: React.FC = () => {
       {/* Gauche : texte custom (tu peux modifier librement) */}
       <div className="flex items-center gap-1 text-os-text">
         <span className="font-semibold">VM :</span>
-        <span>Nom du perso</span>
+        <span>Reese Anderson</span>
         <span className="mx-2">|</span>
       </div>
 

@@ -22,9 +22,9 @@ export const ABOUT_FILES: AboutFile[] = [
     code: '006',
     number: 6,
     title: 'Day_01_initialisation.mp4',
-    videoSrc: '/videos/1.mp4',
-    isAccessible: false,      // ✅ Accessible
-    triggersEndGame: false,  // ❌ Ne finit pas le jeu
+    videoSrc: '/videos/1.webm',
+    isAccessible: true,      
+    triggersEndGame: true,  
   },
   {
     id: 'pants',
@@ -55,9 +55,9 @@ export const ABOUT_FILES: AboutFile[] = [
     code: '047',
     number: 47,
     title: 'Day_19_split.mp4',
-    videoSrc: '/videos/2.mp4',
-    isAccessible: true,      // ✅ Accessible (2ème vidéo)
-    triggersEndGame: true,   // 🏁 CELLE-CI DÉCLENCHE LA FIN DU JEU (Exemple)
+    videoSrc: '/videos/1.webm',
+    isAccessible: false,      // ✅ Accessible (2ème vidéo)
+    triggersEndGame: false,   // 🏁 CELLE-CI DÉCLENCHE LA FIN DU JEU (Exemple)
   },
   {
     id: 'raccoon',
