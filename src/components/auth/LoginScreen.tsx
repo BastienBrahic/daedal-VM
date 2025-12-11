@@ -376,7 +376,7 @@ export const LoginScreen: React.FC = () => {
                   aria-invalid={!!usernameError}
                 />
                 <div ref={hiddenTextRef} className="hidden-clue">
-                  it's your real name
+                  it's your real Surname.
                 </div>
                 {usernameError && <div className="field-error">{usernameError}</div>}
               </label>
